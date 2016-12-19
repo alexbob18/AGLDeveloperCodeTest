@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using AGLDeveloperCodeTest.Models;
 using System.Net.Http;
-using System.Configuration;
 using System.Web.Script.Serialization;
 
 namespace AGLDeveloperCodeTest.Service
