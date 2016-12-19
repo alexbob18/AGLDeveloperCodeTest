@@ -26,7 +26,7 @@ namespace AGLDeveloperCodeTest.Tests
             Mock<IProcessJsonDataService> _processMoqJsonDataService = new Mock<IProcessJsonDataService>();
 
             _processMoqJsonDataService.Setup(service => service.GetPeoplePetsData())
-                        .Returns(GetMocPetsViewModelModelData());
+                        .Returns(GetMocPetsViewModelData());
 
             var testPeoplePetsController = new PeoplePetsController(_processMoqJsonDataService.Object);
             var moqResult = testPeoplePetsController.PeoplePets() as ViewResult;
@@ -84,7 +84,7 @@ namespace AGLDeveloperCodeTest.Tests
         /// <summary>
         /// Sorted moc data to be compared with actual json source
         /// </summary>
-        private PetsViewModel GetMocPetsViewModelModelData()
+        private PetsViewModel GetMocPetsViewModelData()
         {
             return new PetsViewModel
             {
