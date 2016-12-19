@@ -16,7 +16,7 @@ namespace AGLDeveloperCodeTest
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "PeoplePets", action = "PeoplePets", id = UrlParameter.Optional }
             );
         }
     }

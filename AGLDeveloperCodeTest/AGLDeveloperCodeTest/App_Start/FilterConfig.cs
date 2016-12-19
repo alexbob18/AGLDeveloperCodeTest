@@ -1,4 +1,5 @@
-﻿using System.Web;
+﻿using AGLDeveloperCodeTest.Handlers;
+using System.Web;
 using System.Web.Mvc;
 
 namespace AGLDeveloperCodeTest
@@ -7,7 +8,7 @@ namespace AGLDeveloperCodeTest
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
-            filters.Add(new HandleErrorAttribute());
+            filters.Add(new ExceptionFilter());
         }
     }
 }

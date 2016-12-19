@@ -1,0 +1,35 @@
+﻿@model  AGLDeveloperCodeTest.Models.PetsViewModel
+@{
+    ViewBag.Title = "PeoplePets";
+}
+
+<h2>Pets Information</h2>
+
+<div>
+    <h5>Male</h5>
+    <ul>
+        @if (Model.MaleCats != null)
+        {
+            foreach (var male in Model.MaleCats)
+            {
+                <li>
+                    @male.Name
+                </li>
+            }
+        }
+    </ul>
+    <h5>Female</h5>
+    <ul>
+        @if (Model.FemaleCats != null)
+        {
+            foreach (var female in Model.FemaleCats)
+            {
+                <li>
+                    @female.Name
+                </li>
+            }
+        }
+    </ul>
+</div>
+
+

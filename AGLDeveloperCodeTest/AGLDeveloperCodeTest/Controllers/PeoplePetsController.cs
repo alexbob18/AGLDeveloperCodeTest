@@ -23,7 +23,7 @@ namespace AGLDeveloperCodeTest.Controllers
         // GET: PeoplePets
         public ActionResult PeoplePets()
         {
-            return View();
+            return View("PeoplePets", _Service.GetPeoplePetsData());
         }
     }
 }
